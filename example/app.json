@@ -1,0 +1,22 @@
+{
+  "name": "react-native-fade-loading-example",
+  "displayName": "FadeLoading Example",
+  "expo": {
+    "name": "react-native-fade-loading-example",
+    "slug": "react-native-fade-loading-example",
+    "description": "Example app for react-native-fade-loading",
+    "privacy": "public",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
