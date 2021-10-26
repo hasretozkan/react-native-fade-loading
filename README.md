@@ -1,6 +1,6 @@
 # React Native Fade Loading
 
-[![npm version](https://badge.fury.io/js/react-native-fade-loading.svg)](https://www.npmjs.com/package/react-native-fade-loading)
+[![npm version](https://img.shields.io/badge/npm%20package-0.1.1-blue)](https://www.npmjs.com/package/react-native-fade-loading) [![npm version](https://img.shields.io/badge/size-1.6%20kB-yellow)](https://www.npmjs.com/package/react-native-fade-loading) 
 
 Placeholder/Loading for React Native
 
@@ -31,11 +31,12 @@ import { FadeLoading } from 'react-native-fade-loading';
 
 | Prop                 | Description                     | Type    | Default                |
 | -------------------- | ------------------------------- | ------- | ---------------------- |
-| **`style`**          | Container Style                 | Style   | {width: 60,height: 60} |
-| **`visible`**        | Visible child components        | boolean | false                  |
+| **`style`**          | Container Style                 | Style   | {padding: 5,borderRadius: 4} |
+| **`visible`**        | Visible child components        | boolean | true                  |
 | **`primaryColor`**   | Main color of fade loading      | string  | 'lightgray'            |
 | **`secondaryColor`** | Secondary color of fade loading | string  | 'whitesmoke'           |
 | **`duration`**       | Duration of fade loading (ms)   | number  | 5000                   |
+| **`animated`**       | Animation enable value for component   | boolean  | true                   |
 
 ## Contributing
 
