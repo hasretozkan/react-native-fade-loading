@@ -14,7 +14,7 @@ npm install --save react-native-fade-loading
 or
 
 ```sh
-yarn add react-native-shimmer-placeholder
+yarn add react-native-fade-loading
 ```
 
 ## Usage
