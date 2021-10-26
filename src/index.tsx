@@ -20,6 +20,9 @@ interface Props {
 
   /** Visible value for component. */
   visible: boolean;
+
+  /** Animation enable value for component. */
+  animated: boolean;
 }
 
 // FadeLoading State Types
@@ -30,6 +33,7 @@ interface State {
   secondaryColor: string;
   duration: number;
   visible: boolean;
+  animated: boolean;
 }
 
 export class FadeLoading extends React.Component<Props, State> {
@@ -42,6 +46,7 @@ export class FadeLoading extends React.Component<Props, State> {
       secondaryColor: props.secondaryColor || 'whitesmoke',
       duration: props.duration || 2000,
       visible: props.visible || true,
+      animated: props.animated || true,
     };
   }
 
@@ -50,7 +55,11 @@ export class FadeLoading extends React.Component<Props, State> {
   };
 
   handleAnimation = () => {
-    const { cardAnimation, duration } = this.state;
+    const { cardAnimation, duration, animated } = this.state;
+
+    if (!animated) {
+      return;
+    }
 
     Animated.loop(
       Animated.timing(cardAnimation, {
