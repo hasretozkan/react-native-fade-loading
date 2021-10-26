@@ -45,8 +45,8 @@ export class FadeLoading extends React.Component<Props, State> {
       primaryColor: props.primaryColor || 'lightgray',
       secondaryColor: props.secondaryColor || 'whitesmoke',
       duration: props.duration || 2000,
-      visible: props.visible || true,
-      animated: props.animated || true,
+      visible: typeof props.visible === 'undefined' ? true : props.visible,
+      animated: typeof props.animated === 'undefined' ? true : props.animated,
     };
   }
 
@@ -55,9 +55,9 @@ export class FadeLoading extends React.Component<Props, State> {
   };
 
   handleAnimation = () => {
-    const { cardAnimation, duration, animated } = this.state;
+    const { cardAnimation, duration, animated, visible } = this.state;
 
-    if (!animated) {
+    if (!animated || !visible) {
       return;
     }
 
