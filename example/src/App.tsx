@@ -6,7 +6,23 @@ import { FadeLoading } from 'react-native-fade-loading';
 export default function App() {
   return (
     <View style={styles.container}>
+      <Text style={styles.title}>React Native Fade Loading</Text>
+      <Text style={[styles.title, { fontSize: 16, marginVertical: 10 }]}>
+        First Section
+      </Text>
+      <FadeLoading style={[styles.box, { width: '45%' }]} />
       <FadeLoading style={styles.box} />
+      <FadeLoading style={styles.box} />
+      <FadeLoading style={styles.box} />
+      <FadeLoading style={styles.box} />
+      <Text style={[styles.title, { fontSize: 16, marginVertical: 10 }]}>
+        Second Section
+      </Text>
+      <FadeLoading style={[styles.box, { height: 150 }]} />
+      <FadeLoading style={styles.box} />
+      <FadeLoading style={styles.box} />
+      <FadeLoading style={styles.box} />
+      <FadeLoading style={[styles.box, { width: '45%' }]} />
     </View>
   );
 }
@@ -15,11 +31,15 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    justifyContent: 'center',
+  },
+  title: {
+    fontWeight: 'bold',
+    fontSize: 20,
+    marginVertical: 40,
   },
   box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
+    width: '90%',
+    height: 20,
+    marginVertical: 5,
   },
 });
