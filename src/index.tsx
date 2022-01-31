@@ -45,8 +45,8 @@ export class FadeLoading extends React.Component<Props, State> {
       primaryColor: props.primaryColor || 'lightgray',
       secondaryColor: props.secondaryColor || 'whitesmoke',
       duration: props.duration || 2000,
-      visible: typeof props.visible === 'undefined' ? true : props.visible,
-      animated: typeof props.animated === 'undefined' ? true : props.animated,
+      visible: !props.visible ? true : props.visible,
+      animated: !props.animated ? true : props.animated,
     };
   }
 
@@ -76,7 +76,7 @@ export class FadeLoading extends React.Component<Props, State> {
     const { children } = this.props;
 
     const backgroundColor = cardAnimation.interpolate({
-      inputRange: [0, 1, 2],
+      inputRange: [0, 1.25, 2],
       outputRange: [primaryColor, secondaryColor, primaryColor],
     });
 
