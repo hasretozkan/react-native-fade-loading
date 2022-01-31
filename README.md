@@ -29,14 +29,15 @@ import { FadeLoading } from 'react-native-fade-loading';
 
 ## Props
 
-| Prop                 | Description                     | Type    | Default                |
-| -------------------- | ------------------------------- | ------- | ---------------------- |
-| **`style`**          | Container Style                 | Style   | {padding: 5,borderRadius: 4} |
-| **`visible`**        | Visible child components        | boolean | true                  |
-| **`primaryColor`**   | Main color of fade loading      | string  | 'lightgray'            |
-| **`secondaryColor`** | Secondary color of fade loading | string  | 'whitesmoke'           |
-| **`duration`**       | Duration of fade loading (ms)   | number  | 5000                   |
-| **`animated`**       | Animation enable value for component   | boolean  | true                   |
+| Prop                 | Description                          | Type      | Default                      |
+| -------------------- | ------------------------------------ | --------- | ---------------------------- |
+| **`children`**       | Components Elements                  | Component | null                         |
+| **`style`**          | Container Style                      | Style     | {padding: 5,borderRadius: 4} |
+| **`visible`**        | Visible child components             | boolean   | true                         |
+| **`primaryColor`**   | Main color of fade loading           | string    | 'lightgray'                  |
+| **`secondaryColor`** | Secondary color of fade loading      | string    | 'whitesmoke'                 |
+| **`duration`**       | Duration of fade loading (ms)        | number    | 5000                         |
+| **`animated`**       | Animation enable value for component | boolean   | true                         |
 
 ## Contributing
 
