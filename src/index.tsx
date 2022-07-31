@@ -41,12 +41,12 @@ export class FadeLoading extends React.Component<Props, State> {
     super(props);
     this.state = {
       cardAnimation: new Animated.Value(0),
-      style: props.style || {},
-      primaryColor: props.primaryColor || 'lightgray',
-      secondaryColor: props.secondaryColor || 'whitesmoke',
-      duration: props.duration || 2000,
-      visible: !props.visible ? true : props.visible,
-      animated: !props.animated ? true : props.animated,
+      style: props?.style || {},
+      primaryColor: props?.primaryColor || 'lightgray',
+      secondaryColor: props?.secondaryColor || 'whitesmoke',
+      duration: props?.duration || 2000,
+      visible: !props?.visible ? true : props?.visible,
+      animated: !props?.animated ? true : props?.animated,
     };
   }
 

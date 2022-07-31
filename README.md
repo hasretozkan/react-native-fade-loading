@@ -1,6 +1,6 @@
 # React Native Fade Loading
 
-[![npm version](https://img.shields.io/badge/npm%20package-0.1.2-blue)](https://www.npmjs.com/package/react-native-fade-loading) [![npm version](https://img.shields.io/badge/size-1.6%20kB-yellow)](https://www.npmjs.com/package/react-native-fade-loading) 
+[![npm version](https://img.shields.io/badge/npm%20package-1.0.0-blue)](https://www.npmjs.com/package/react-native-fade-loading) [![npm version](https://img.shields.io/badge/size-1.6%20kB-yellow)](https://www.npmjs.com/package/react-native-fade-loading) 
 
 Placeholder/Loading for React Native
 
